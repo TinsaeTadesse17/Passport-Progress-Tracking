@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+      
+      <title>delete account</title>
+      <link rel="stylesheet" href="style3.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible"content="ie=edge">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+      <section class="form signup">
+           
+             
+            <header style="background: #FF6347;color: #fff; text-align: center; text">Delete Staff Account </header>
+            <form action="delete.php" enctype="multipart/form-data"  method="POST">
+              
+                     <div class="field"style="display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;">
+                           <label style="margin-bottom: 2px;">User Name</label>
+                           <input type="text" name="username"style="height: 40px;
+      width: 100%;
+      font-size: 16px;
+      padding: 0 10px;
+      border: 1px solid #ccc;"placeholder="Enter User Name"required>
+                     </div>
+                    
+                     
+                     
+                     <select name="role" style="
+					 width: 50%;
+	height: 40px;
+	background: #faf6f6;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+      margin-top: 30px;
+	padding: 10px;
+	
+	outline: 1px;
+	text-align: center;
+	border-radius: 5px;
+					" required>
+					<option selected >Select role</option>
+						<option >Admin</option>
+						<option>Accountant</option>
+						<option>License Officer</option>
+                    </select>
+                     
+                     <div class="field button"style="display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;">
+                           
+                           <input type="submit" name="submit"value="Delete Account" style="margin-top: 30px;height: 45px;border: none;font-size: 17px; font-weight: 600;background: #333;color: #fff;border-radius: 5px;cursor: pointer;">
+                     </div>
+                     <a href="../choice.html" class="link-dark" style="text-align: center;"> Back to Choice</a>
+                     <div class="link"style="text-align: center;margin: 10px 0; font-size: 17px; margin-top:15px;">  </div>
+            </form>
+      </section>
+  </div>
+  <script src="javascript/pass-show-hide.js"></script>
+</body>
+</html>

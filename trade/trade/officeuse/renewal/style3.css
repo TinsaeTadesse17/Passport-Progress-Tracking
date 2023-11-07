@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	
+	font-family: 'Poppins', sans-serif;
+}
+body{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh ;
+	background: #ebe7e7;
+}
+.wrapper{
+	background: #f8f4f4;
+	width: 450px;
+	border-radius: 16px;
+	box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+	            0 32px 64px -48px rgba(0,0,0,0.5);
+}
+/*signup form*/
+.form{
+	padding: 25px 30px;
+}
+.form header{
+	font-size: 25px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.form form{
+	margin: 20px 0;
+}
+.form form .error-txt{
+	color: #721c24;
+	background: #f8d7da;
+	padding: 8px 10px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #f5c6cb;
+}
+.form form.name-details{
+	display: flex;
+}
+form.name-details .field:first-child{
+	margin-right: 10px;
+
+}
+form.name-details .field:last-child{
+	margin-left: 10px;
+
+}
+.form form.field{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+
+}
+.form form.field input{
+    outline: none;
+}
+.form form .input input{
+	height: 40px;
+	width: 100%;
+	font-size: 16px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+  
+}
+.chat-area .typing-area{
+	padding: 11px 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.chat-area input{
+	height: 45px;
+	width: calc(338px);
+	font-size: 17px;
+	border: 1px solid #ccc;
+	padding: 0 13px;
+	border-radius: 15px;
+	outline: none;
+
+}
+.chat-area button{
+	width: 58px;
+	border: none;
+    outline: none;
+    border-radius: 8px 8px 8px 8px;
+    background: #333;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 6px;
+}
+.form form .field i{
+	position: absolute;
+	right: 15px; 
+	color:#ccc; 
+	top: 70%; 
+	transform: translateY(-50%); 
+	cursor:pointer;
+}
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
